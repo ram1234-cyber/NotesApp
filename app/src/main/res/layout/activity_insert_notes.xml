@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.InsertNotes"
+    android:background="#E8E8E8"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="Title.."
+            android:textColorHint="#707070"
+            android:background="@drawable/edittextbg"
+            android:padding="15dp"
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/black"/>
+
+
+        <EditText
+            android:id="@+id/subtitles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:textColorHint="#707070"
+            android:background="@drawable/edittextbg"
+            android:padding="15dp"
+            android:hint="Subtitle.."
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_marginRight="16dp"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Priority"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/open_sans_regular" />
+
+            <ImageView
+                android:layout_width="25sp"
+                android:id="@+id/green_prior"
+                android:layout_height="25dp"
+                android:background="@drawable/green"
+
+                android:layout_margin="10dp"/>
+
+
+            <ImageView
+                android:layout_width="25sp"
+                android:id="@+id/yellow_prior"
+                android:layout_height="25dp"
+                android:background="@drawable/yellow"
+                android:layout_margin="10dp"/>
+
+
+            <ImageView
+                android:layout_width="25sp"
+                android:id="@+id/red_prior"
+                android:layout_height="25dp"
+                android:background="@drawable/redshape"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/notesdata"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="Notes"
+            android:textColorHint="#707070"
+            android:textColor="@color/black"
+            android:background="@drawable/edittextbg"
+            android:padding="15dp"
+            android:gravity="start"
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_marginRight="16dp"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/donesBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="26dp"
+        app:backgroundTint="@color/red"
+        android:src="@drawable/ic_baseline_done_24"
+
+        />
+
+
+
+
+</RelativeLayout>

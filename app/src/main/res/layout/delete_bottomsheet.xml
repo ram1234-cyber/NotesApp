@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+   android:id="@+id/bottom_sheet"
+    android:orientation="vertical">
+    
+    <View
+
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:background="@drawable/delete_indicatorshape"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_regular"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Are you sure want to delete\n this note? "
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/delete_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:padding="7dp"
+        android:background="@drawable/no_delete"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans_regular"
+        android:layout_marginLeft="10dp"
+       android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/delete_yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Yes"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:padding="7dp"
+        android:background="@drawable/yes_delete"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans_regular"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+
+
+
+</LinearLayout>
